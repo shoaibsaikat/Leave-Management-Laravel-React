@@ -59,3 +59,8 @@
     DB_PASSWORD=Password123
 
 7.  run "php artisan migrate".
+
+
+# Note
+1. pattern used for password is for example for user, "<user>@dev.com" is "<user>@2026". users are availble in users table
+
