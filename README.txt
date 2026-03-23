@@ -32,9 +32,11 @@
     Fix:
         1. Add below in composer.json:
             "require": {
-            ...
-            "laravel/wayfinder": "^0.1.9",
-            "bacon/bacon-qr-code": "^3.0.3"
+                ...
+                "laravel/wayfinder": "^0.1.9",
+                "bacon/bacon-qr-code": "^3.0.3",
+                ...
+            }
         2. uncomment the line ;extension=iconv in the PHP configuration file, typically located at /etc/php/php.ini, changing it to extension=
         3. cd my-app and run "composer install"
 
