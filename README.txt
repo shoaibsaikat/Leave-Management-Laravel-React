@@ -65,4 +65,3 @@
 
 # Note
 1. pattern used for password is for example for user, "<user>@dev.com" is "<user>@2026". users are availble in users table
-
