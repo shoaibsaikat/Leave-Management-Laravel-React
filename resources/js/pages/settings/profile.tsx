@@ -91,6 +91,42 @@ export default function Profile({
                                     />
                                 </div>
 
+                                <div className="grid gap-2">
+                                    <Label htmlFor="designation">Designation</Label>
+
+                                    <Input
+                                        id="designation"
+                                        className="mt-1 block w-full"
+                                        defaultValue={auth.user.designation}
+                                        name="designation"
+                                        autoComplete="designation"
+                                        placeholder="Designation"
+                                    />
+
+                                    <InputError
+                                        className="mt-2"
+                                        message={errors.designation}
+                                    />
+                                </div>
+
+                                <div className="grid gap-2">
+                                    <Label htmlFor="phone">Phone Number</Label>
+
+                                    <Input
+                                        id="phone"
+                                        className="mt-1 block w-full"
+                                        defaultValue={auth.user.phone}
+                                        name="phone"
+                                        autoComplete="phone"
+                                        placeholder="Phone number"
+                                    />
+
+                                    <InputError
+                                        className="mt-2"
+                                        message={errors.phone}
+                                    />
+                                </div>
+
                                 {mustVerifyEmail &&
                                     auth.user.email_verified_at === null && (
                                         <div>
