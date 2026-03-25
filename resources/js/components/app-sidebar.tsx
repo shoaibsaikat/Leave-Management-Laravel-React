@@ -26,12 +26,12 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
-        title: '#',
+        title: 'Title 1',
         href: '#',
         icon: Folder,
     },
     {
-        title: '#',
+        title: 'Title 2',
         href: '#',
         icon: BookOpen,
     },

@@ -1,7 +1,12 @@
 import { Head } from '@inertiajs/react';
 import AppLayout from '@/layouts/app-layout';
+import { type User } from '@/types/index';
 
-export default function UserList({ users }) {
+export default function UserList({
+    users
+}: {
+    users: User[];
+}) {
     return (
         <AppLayout>
             <Head title="User List" />
