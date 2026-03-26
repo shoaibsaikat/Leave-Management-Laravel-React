@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Calendar, Folder, LayoutGrid, User } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -26,14 +26,14 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Title 1',
-        href: '#',
-        icon: Folder,
+        title: 'User Management',
+        href: '/user/list',
+        icon: User,
     },
     {
-        title: 'Title 2',
+        title: 'Leave Manament',
         href: '#',
-        icon: BookOpen,
+        icon: Calendar,
     },
 ];
 

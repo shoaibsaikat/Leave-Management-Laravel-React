@@ -19,7 +19,6 @@ export default function UserList({
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="User List" />
             <div className="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
-                <h1>User List</h1>
                 <ul>
                     {users.map((user) => (
                         <li key={user.id}>
