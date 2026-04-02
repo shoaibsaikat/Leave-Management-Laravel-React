@@ -17,7 +17,7 @@ class UserManagementController extends Controller
     public function list()
     {
         return Inertia::render('user/list', [
-            'users' => User::all(),
+            'users' => User::all()->select('id', 'name', 'designation', 'can_manage_user', 'can_manage_leave'),
         ]);
     }
 }

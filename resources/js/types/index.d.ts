@@ -41,5 +41,7 @@ export interface User {
     updated_at: string;
     designation: string;
     phone: string;
+    can_manage_user: boolean;
+    can_manage_leave: boolean;
     [key: string]: unknown; // This allows for additional properties...
 }
