@@ -1,4 +1,4 @@
-import { Form, Head } from '@inertiajs/react';
+import { useForm, Head, Form } from '@inertiajs/react';
 import AppLayout from '@/layouts/app-layout';
 import { type User } from '@/types/index';
 import { type BreadcrumbItem } from '@/types';
@@ -9,11 +9,22 @@ const breadcrumbs: BreadcrumbItem[] = [
         href: '/user/list',
     },
 ];
+
+
+
 export default function UserList({
     users
 }: {
     users: User[];
 }) {
+    const form = useForm({
+
+    })
+
+    function submit() {
+        console.log('submit');
+    }
+
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="User List" />
@@ -42,7 +53,7 @@ export default function UserList({
                                     <input className="form-check-input" id="can_manage_leave" type="checkbox" name="can_manage_leave" defaultChecked={user.can_manage_leave === true} />
                                 </td>
                                 <td>
-                                    <button type="submit" className="btn btn-primary">Change</button>
+                                    <button type="submit" className="btn btn-primary" onClick={submit}>Change</button>
                                 </td>
                             </tr>
                         ))}
