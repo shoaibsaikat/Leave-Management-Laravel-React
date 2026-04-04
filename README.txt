@@ -63,7 +63,7 @@
 7.  run "php artisan migrate".
 
 # Running Fresh Project
-1. Create .env file and update if as mentioned above #6
+1. Create .env file and update as mentioned above #6
 2. Run "php artisan key:generate"
 3. Run "composer install" and "npm install"
 4. Run "php artisan serve" and "npm run dev"
